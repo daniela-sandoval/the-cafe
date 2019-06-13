@@ -1,0 +1,12 @@
+<h1>👤 Customers 👤</h1>
+<ul>
+  <% @customers.each do |c| %>
+    <li>
+      ☞ <%= link_to c.name, c %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to '<button type="button">Create Customer</button>'.html_safe, new_customer_path %><br>
+<br>
+<%= link_to '<button type="button">Welcome Page</button>'.html_safe, welcome_path %><br>

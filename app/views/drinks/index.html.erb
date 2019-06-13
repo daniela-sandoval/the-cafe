@@ -1,0 +1,10 @@
+<h1>📜 Drink Menu 📜</h1>
+<ul>
+  <% @drinks.each do |d| %>
+    <li>
+      ♨ <%= d.name %>
+    </li>
+  <% end  %>
+</ul>
+
+<%= link_to '<button type="button">Welcome Page</button>'.html_safe, welcome_path %><br>

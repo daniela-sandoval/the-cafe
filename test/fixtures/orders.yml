@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 1
+  drink_id: 1
+  size: MyString
+  reciept: false
+
+two:
+  customer_id: 1
+  drink_id: 1
+  size: MyString
+  reciept: false

@@ -1,0 +1,17 @@
+<h1>☕️ Make An Order ☕️</h1>
+<%= form_for @order do |f| %>
+  <%= f.label "Customer:" %>
+    <%= f.collection_select :customer_id, @customers, :id, :name %><br>
+  <%= f.label "Pick a drink:" %>
+    <%= f.collection_select :drink_id, @drinks, :id, :name %><br>
+  <%= f.label "Choose one size: " %><br>
+  <%= f.select :size, ["small", "medium", "large"] %><br>
+  <%= f.label "Want a reciept?" %>
+    <%= f.check_box :reciept %><br>
+  <p>∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇∇ </p>
+  <%= f.submit "Create Your Order" %>
+<% end  %>
+<br>
+<%= link_to '<button type="button">New Customer?</button>'.html_safe, new_customer_path %><br>
+<br>
+<%= link_to '<button type="button">Welcome Page</button>'.html_safe, welcome_path %>
